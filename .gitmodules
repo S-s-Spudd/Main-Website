@@ -1,0 +1,3 @@
+[submodules "themes/SsSpudd"]  
+    path = themes/gitty
+    url = "https://github.com/S-s-Spudd/Main-Website"
