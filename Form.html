@@ -32,12 +32,12 @@
 						
 						<!-- Form -->
 							<section>
-								<form method="post" id="form" action="#">
+								<form method="post" id="form" action="">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
 											<input type="text" name="name" id="name" value="" placeholder="Name" />
 										</div>
-										<div class="col-6 col-12-xsmall">
+										<div id="email_div" class="col-6 col-12-xsmall">
 											<input type="text" name="" id="email" value="" placeholder="Enter Email Address"/>
 										</div>
 										<div class="col-12">
@@ -45,7 +45,6 @@
 										</div>
 										<div class="col-12">
 											<ul class="actions">
-												<li><input id="submit_button" type="submit" name="Validate" value="Send Message" class="primary"></input></li>
 												<li><input type="reset" value="Reset" /></li>
 											</ul>
 										</div>
@@ -54,6 +53,8 @@
 							</section>
 					</div>
 				</div>
+
+				<button id="submit_button" name="Validate" value="Send Message"></button>
 
 			<!-- Footer -->
 			<footer id="footer">
