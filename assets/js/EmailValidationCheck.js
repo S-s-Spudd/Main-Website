@@ -15,12 +15,12 @@ function validation() {
     if (email.match(pattern))
     {
         email_validation_msg.innerText = valid_message;
-        email_validation_msg.style.color = "#00ff00";
+        email_validation_msg.style.color = "#00FFF7";
     }
     else
     {
         email_validation_msg.innerText = invalid_message;
-        email_validation_msg.style.color = "#ff0000";
+        email_validation_msg.style.color = "#ff00e1";
         //alert("Not a Valid Email Address");
     }
         
