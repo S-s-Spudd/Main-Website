@@ -2857,7 +2857,7 @@ input, select, textarea {
 		.button:hover,
 		.button:active {
 			box-shadow: inset 0 0 0 1px #ff00e1;
-			color: #e44c65 !important;
+			color: #ff00e1 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2915,7 +2915,7 @@ input, select, textarea {
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #e13652;
+				background-color: #ff00e1;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
