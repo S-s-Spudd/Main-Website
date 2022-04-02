@@ -1,5 +1,7 @@
 //console.log("test");
 
+// Email Validation
+
 var email_div = document.getElementById("email_div");
 var email_validation_msg = document.createElement("h5");
 email_div.appendChild(email_validation_msg);
@@ -35,3 +37,29 @@ submit_button.addEventListener("click", function submit() {
 
 // document.getElementById("validation").addEventListener('keypress', function validation() {
 //     document.getElementById("email").value});
+
+
+// Password Validation
+
+function verifyPassword() {  
+    var password = document.getElementById("pswd").value;  
+    //check empty password field  
+    if(password == "") {  
+       document.getElementById("message").innerText = "**Fill the password please!";
+       return false;  
+    }  
+     
+   //minimum password length validation  
+    if(password.length < 8) {  
+       document.getElementById("message").innerText = "**Password length must be atleast 8 characters";  
+       return false;  
+    }  
+    
+  //maximum length of password validation  
+    if(password.length > 15) {  
+       document.getElementById("message").innerText = "**Password length must not exceed 15 characters";  
+       return false;  
+    } else {  
+       alert("Password is correct");  
+    }  
+  }  

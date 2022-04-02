@@ -31,27 +31,39 @@
 						</header>
 						
 						<!-- Form -->
-							<section>
-								<form method="GET" id="form" action="">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
-										</div>
-										<div id="email_div" class="col-6 col-12-xsmall">
-											<input type="text" name="" id="email" value="" placeholder="Enter Email Address"/>
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input id="submit_button" type="submit" onkeypress="validation()" value="Send Message" class="primary"></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</div>
+						<section class="col-6 col-12-narrower">
+							<form method="GET" id= form action="">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="name" id="first name" value="" placeholder="First Name" />
 									</div>
-								</form>
-							</section>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="name" id="last name" value="" placeholder="Last Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="" id="Username" value="" placeholder="Username"/>
+									</div>
+									<div id="email_div" class="col-6 col-12-xsmall">
+										<input type="text" name="" id="email" value="" placeholder="Enter Email Address"/>
+									</div>
+									<div id="phone_number" class="col-6 col-12-xsmall">
+										<input type="text" name="" id="Phone Number" value="" placeholder="Phone Number"/>
+									</div>
+									<div id="password_div" class="col-6 col-12-xsmall">
+										<input type="text" name="" id="pswd" value="" placeholder="Enter a Password"/>
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input id="submit_button" type="submit" onkeypress="validation()" value="Register" class="primary"></li>
+											<li><input type="reset" value="Clear form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
 					</div>
 				</div>
 
@@ -72,7 +84,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/EmailValidationCheck.js" charset="utf-8"></script>
+			<script src="assets/js/ValidationChecks.js" charset="utf-8"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	</body>
