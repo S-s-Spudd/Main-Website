@@ -24,9 +24,10 @@ function validation() {
         email_validation_msg.innerText = invalid_message;
         email_validation_msg.style.color = "#ff00e1";
         //alert("Not a Valid Email Address");
-    }
+    };
  
-    verifyPassword()
+    console.log("")
+    verifyPassword();
 }
 
 var submit_button = document.getElementById("submit_button");
@@ -41,6 +42,8 @@ submit_button.addEventListener("click", function submit() {
 
 
 // Password Validation
+
+
 
 function verifyPassword() {  
     var password = document.getElementById("pswd").value;  
@@ -62,7 +65,8 @@ function verifyPassword() {
        return false;  
     } else {  
        alert("Password is correct");  
-    }  
+    } 
+    console.log("test password");
   }  
 
   var submit_button = document.getElementById("submit_button");
