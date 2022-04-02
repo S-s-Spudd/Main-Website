@@ -25,7 +25,8 @@ function validation() {
         email_validation_msg.style.color = "#ff00e1";
         //alert("Not a Valid Email Address");
     }
-        
+ 
+    verifyPassword()
 }
 
 var submit_button = document.getElementById("submit_button");
@@ -63,3 +64,5 @@ function verifyPassword() {
        alert("Password is correct");  
     }  
   }  
+
+  var submit_button = document.getElementById("submit_button");
