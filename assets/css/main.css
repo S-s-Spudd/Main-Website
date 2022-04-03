@@ -768,6 +768,7 @@ input, select, textarea {
 
 		.row > .col-6 {
 			width: 50%;
+			margin-bottom: 15px;
 		}
 
 		.row > .off-6 {
@@ -2640,6 +2641,7 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		margin-top: 1em;
 	}
 
 		ul.actions li {
@@ -3534,7 +3536,7 @@ input, select, textarea {
 
 	#footer {
 		background: #272833;
-		padding: 6em 0;
+		padding: 2em 2em;
 		text-align: center;
 	}
 
