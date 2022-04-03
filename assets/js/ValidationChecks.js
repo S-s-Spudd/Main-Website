@@ -1,6 +1,10 @@
-//console.log("test");
-
 // Email Validation
+
+
+
+
+
+
 
 var email_div = document.getElementById("email_div");
 var email_validation_msg = document.createElement("h5");
@@ -33,12 +37,13 @@ function validation() {
 var submit_button = document.getElementById("submit_button");
 //console.log(submit_button);
 
-submit_button.addEventListener("click", function submit() {
-    validation();
-});
 
-// document.getElementById("validation").addEventListener('keypress', function validation() {
-//     document.getElementById("email").value});
+
+
+
+
+
+
 
 
 // Password Validation
@@ -53,21 +58,25 @@ function verifyPassword() {
     //check empty password field  
     if(password == "") {  
         password_verify_msg.innerText = "**Fill the password please!";
+        password_verify_msg.style.color = "#00FFF7";
         return false;
     }  
      
    //minimum password length validation  
     if(password.length < 8) {  
-        password_verify_msg.innerText = "**Password length must be atleast 8 characters";  
+        password_verify_msg.innerText = "**Password length must be atleast 8 characters"; 
+        password_verify_msg.style.color = "#00FFF7";
         return false;  
     }  
     
   //maximum length of password validation  
     if(password.length > 15) {  
         password_verify_msg.innerText = "**Password length must not exceed 15 characters";
+        password_verify_msg.style.color = "#00FFF7";
         return false;  
     } else {  
-       alert("Password is correct");  
+       password_verify_msg.innerText = "Password validation is passed";  
+       password_verify_msg.style.color = "00FFF7"
     }
   };
 
