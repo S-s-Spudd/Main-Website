@@ -43,30 +43,34 @@ submit_button.addEventListener("click", function submit() {
 
 // Password Validation
 
-
+var password_div = document.getElementById("password_div");
+var password_verify_msg = document.createElement("h5");
+password_div.appendChild(password_verify_msg);
 
 function verifyPassword() {  
-    var password = document.getElementById("pswd").value;  
+    var password = document.getElementById("pswd").value;
+    
     //check empty password field  
     if(password == "") {  
-       document.getElementById("message").innerText = "**Fill the password please!";
-       return false;  
+        password_verify_msg.innerText = "**Fill the password please!";
+        return false;
     }  
      
    //minimum password length validation  
     if(password.length < 8) {  
-       document.getElementById("message").innerText = "**Password length must be atleast 8 characters";  
-       return false;  
+        password_verify_msg.innerText = "**Password length must be atleast 8 characters";  
+        return false;  
     }  
     
   //maximum length of password validation  
     if(password.length > 15) {  
-       document.getElementById("message").innerText = "**Password length must not exceed 15 characters";  
-       return false;  
+        password_verify_msg.innerText = "**Password length must not exceed 15 characters";
+        return false;  
     } else {  
        alert("Password is correct");  
-    } 
-    console.log("test password");
-  }  
+    }
+  };
+
+
 
   var submit_button = document.getElementById("submit_button");
