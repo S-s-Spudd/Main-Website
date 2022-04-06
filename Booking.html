@@ -17,9 +17,9 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
+						<li><a href="About us.html">About Us</a></li>
                         <li><a href="Booking.html">Booking</a></li>
 						<li><a href="Services.html">Services</a></li>
-						<li><a href="About us.html">About Us</a></li>
 						<li><a href="Form.html" class="button primary">Form</a></li>
 				</ul>
 			</nav>
@@ -30,6 +30,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>Booking</h2>
+							<p>Here you can choose to book a time and date as well as a course that you want your child to learn!!</p>
 						</header>
 						
             <!-- Booking -->
@@ -37,16 +38,38 @@
                 <section class="booking">
 					<div class="container">
 						<form action="Bookingthanks.html" class="form">
-							<div class="row gtr-50"></div>
+							<div class="input-group">
+								<label for="course" class="input-label">What course do you want your child to learn?</label>
+								<select name="options" id="course">
+									<option value="maths">Maths</option>
+									<option value="english">English</option>
+									<option value="verbal">Verbal Reasoning</option>
+									<option value="non-verbal">Non-Verbal Reasoning</option>
+									<option value="geography">Geography</option>
+
+								</select>
+							</div>
+							<div class="input-group">
+								<label for="children" class="input-label">How many children are going to be joining?</label>
+								<select name="options" id="children">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+							</div>
+							<div class="input-group">
+								<label for="appointment" class="input-label">Choose the date of Appointment?</label>
+								<input type="date" name="input" id="appointment">
+							</div>
+							<button type="submit" class="btn form-btn btn-pink">Submit
+								<span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+							</button>
 						</form>
-
-					</div>
-
-
-
-
-
-                </section>
+				</div>
+             </section>
 
 			<!-- Footer -->
 			<footer id="footer">
@@ -65,7 +88,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/EmailValidationCheck.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	</body>
