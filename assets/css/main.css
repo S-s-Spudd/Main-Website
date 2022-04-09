@@ -4053,22 +4053,22 @@ input, select, textarea {
 
 	/* Logo */
 
-	.image {
+	.image #logo1 {
 		-webkit-animation:spin 4s linear infinite;
 		-moz-animation:spin 4s linear infinite;
 		animation:spin 4s linear infinite;
 	}
-	@-moz-keyframes spin { 
-		100% { -moz-transform: rotate(360deg); } 
+	@-moz-keyframes spin {
+		100% { -moz-transform: rotate(360deg); }
 	}
-	@-webkit-keyframes spin { 
-		100% { -webkit-transform: rotate(360deg); } 
+	@-webkit-keyframes spin {
+		100% { -webkit-transform: rotate(360deg); }
 	}
-	@keyframes spin { 
-		100% { 
-			-webkit-transform: rotate(360deg); 
-			transform:rotate(360deg); 
-		} 
+	@keyframes spin {
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform:rotate(360deg);
+		}
 	}
 
 /* XSmall */
@@ -4137,7 +4137,7 @@ input, select, textarea {
 
 
 	/* Booking */
-	
+
 
 		.btn {
 
@@ -4176,7 +4176,7 @@ input, select, textarea {
 		/* Booking style Sections */
 
 		.booking {
-			
+
 			background-image: var(--gradient-color);
 
 		}
@@ -4215,6 +4215,12 @@ input, select, textarea {
 
 		}
 
+
+		.input, #appointment {
+
+			color: black
+
+		}
 
 		.form-btn {
 
