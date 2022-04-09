@@ -4241,3 +4241,14 @@ input, select, textarea {
 
 			background-color: #FF18EE;
 		}
+
+
+	/* rickroll */
+
+	#rickroll {
+
+		margin: auto;
+		padding: auto;
+		aspect-ratio: 16/9;
+
+	}
